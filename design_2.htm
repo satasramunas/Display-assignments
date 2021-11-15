@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +10,25 @@
         * {
             box-sizing: border-box;
         }
+
         body {
             width: 100%;
             margin: 0;
             padding: 0;
         }
+
         h1 {
             font-size: 64px;
             text-align: center;
             margin-bottom: 20px;
         }
+
         h2 {
             font-size: 52px;
             text-align: center;
             margin: 10px;
         }
+
         .header {
             display: flex;
             justify-content: center;
@@ -31,46 +36,66 @@
             padding: 0 20px;
             height: 25px;
             margin: 0 20px 0 30px;
-         }
+        }
+
         .www {
             flex-grow: 2;
             padding: 4px 0px;
             color: white;
         }
+
         .name {
             flex-grow: 6;
             text-align: center;
             padding-top: 4px;
             color: white;
         }
-        .price{
+
+        .price {
             flex-grow: 2;
             text-align: end;
             padding: 4px 50px 0 50px;
             color: white;
         }
+
         .main-content {
             display: flex;
             justify-content: center;
-            margin: 0 30px 0 15px;
+            margin: 0 0 0 15px;
             background-color: thistle;
             height: 420px;
         }
+
         .content-left {
             flex: 1;
             display: flex;
             flex-direction: column;
         }
+
         .content-middle {
             flex: 1;
+            margin: 15px 30px;
         }
+
         .content-right {
             flex: 1;
+            margin: 15px 30px;
         }
-        
 
+        .lower {
+            margin: 15px 0 10px 0;
+        }
+        .red {
+            color: red;
+            margin-right: 60px;
+       }
+
+        img {
+            background-color: gray;
+        }
     </style>
 </head>
+
 <body>
     <h1>THE DAILY NEWS</h1>
     <div class="header">
@@ -78,15 +103,27 @@
         <div class="name">THIS SCHOOL'S BEST NEWS</div>
         <div class="price">$1.00</div>
     </div>
-    <div><h2>YOUR HEADLINE GOES HERE</h2></div>
-    <div class="main-content">
-        <div class="content-left">content left
-            <div class="upper"><img src="" alt=""></div>
-            <div class="lower">lower</div>
-        </div>
-        <div class="content-middle">content middle</div>
-        <div class="content-right">content right</div>
+    <div>
+        <h2>YOUR HEADLINE GOES HERE</h2>
     </div>
-    
+    <div class="main-content">
+        <div class="content-left">
+            <div class="upper"><img src="images/person.png" alt="person_silhouette"></div>
+            <div class="lower"><img src="images/coupon.png" alt="coupon"></div>
+        </div>
+        <div class="content-middle"><span class="red">Bibbity Bobbity Boo -</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quasi necessitatibus quas, fugit quam, reiciendis magni minus beatae dolorum quae labore praesentium, natus
+            ut quos rerum ipsa modi repellat accusamus nulla!
+            Consequuntur commodi quo, odit repellat assumenda quos adipisci ipsum quas cupiditate libero neque, deserunt
+            consectetur soluta itaque eius impedit esse fugit ex eum dolorum nihil doloribus harum fugiat quia. Nam.
+        </div>
+        <div class="content-right"><span class="red">Bibbity Bobbity Boo -</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quasi necessitatibus quas, fugit quam, reiciendis magni minus beatae dolorum quae labore praesentium, natus
+            ut quos rerum ipsa modi repellat accusamus nulla!
+            Consequuntur commodi quo, odit repellat assumenda quos adipisci ipsum quas cupiditate libero neque, deserunt
+            consectetur soluta itaque eius impedit esse fugit ex eum dolorum nihil doloribus harum fugiat quia. Nam.</div>
+    </div>
+
 </body>
+
 </html>
