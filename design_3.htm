@@ -32,11 +32,8 @@
         .question {
             padding:0 100px 0 0;
         }
-        .button {
-            padding: 0 10px;
-        }
-        .button-red {
-            padding: 0 10px 0 80px;
+        .button-first {
+            padding: 0 0px 0 80px;
         }
         button {
             width: 100px;
@@ -59,6 +56,39 @@
             font-weight: bold;
             font-size: 14px;
         }
+        .container {
+            width: 100%;
+        }
+        .calendar {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 0 20px 0 10px;
+            border: 1px solid black;
+            text-align: center; 
+        }
+        .content {
+            width: 100%
+        }
+        .day {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+        }
+        .prop {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            
+        }
+        .drop {
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+        }
 
     </style>
 </head>
@@ -67,10 +97,18 @@
         <div><img src="images/rss-feed-icon.png"></img></div>
         <div><h1>Most Popular Stories</h1></div>
         <div class="question"><a href="www.google.com" id="in-nav">What's This?</a></div>
-        <div class="button-red"><button>NOW</button></div>
+        <div class="button-first"><button>NOW</button></div>
         <div class="button"><button>TODAY</button></div>
         <div class="button"><button>THIS WEEK</button></div>
     </div>
     
+    <div class="container">
+        <div class="calendar">
+            <div class="prop">PROP IT</div>
+            <div class="day">11</div>
+            <div class="drop">DROP IT</div>
+        </div>
+        <div class="content">C-SPAN ranks presidents: Abe still on top, new shocker at the bottom</div>
+    </div>
 </body>
 </html>
