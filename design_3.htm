@@ -5,8 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .navigation {
+            display: flex;
+            align-items: baseline;
+            background-color: rgb(236, 234, 234);
+            padding: 10px 10px 20px 10px;
+        }
+        
+        h1 {
+            margin: 0;
+            padding: 0 10px 0 5px;
+        }
+        img {
+            width: 15px;
+            height: 15px;
+        }
+        .question {
+            padding:0 100px 0 0;
+        }
+        .button {
+            padding: 0 20px;
+        }
+        .button-red {
+            padding: 0 20px 0 80px;
+        }
+        button {
+            width: 100px;
+            height: 25px;
+            border: none;
+            border-radius: 10%;
+            background-color: rgb(236, 234, 234);
+            color: rgb(0, 165, 206);
+        }
+        button:hover {
+            background-color: red;
+            color: white;
+        }
+       
+
+
+    </style>
 </head>
 <body>
+    <div class="navigation">
+        <div><img src="images/rss-feed-icon.png"></img></div>
+        <div><h1>Most Popular Stories</h1></div>
+        <div class="question"><a href="www.google.com">What's This?</a></div>
+        <div class="button-red"><button>NOW</button></div>
+        <div class="button"><button>TODAY</button></div>
+        <div class="button"><button>THIS WEEK</button></div>
+    </div>
     
 </body>
 </html>
