@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +11,38 @@
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         body {
             margin: 0;
         }
+
         .navigation {
             display: flex;
             align-items: baseline;
             background-color: rgb(247, 245, 245);
-            padding: 10px 10px 20px 10px;
+            padding: 10px 20px 20px 10px;
         }
-        
+
         h1 {
             margin: 0;
             padding: 0 10px 0 5px;
             color: red;
         }
+
         img {
             width: 15px;
             height: 15px;
+            margin-left: 10px;
         }
+
         .question {
-            padding:0 100px 0 0;
+            padding: 0 100px 0 0;
         }
+
         .button-first {
             padding: 0 0px 0 80px;
         }
+
         button {
             width: 100px;
             height: 25px;
@@ -44,31 +52,43 @@
             color: rgb(0, 165, 206);
             font-weight: bold;
         }
+
         button:hover {
             background-color: red;
             color: white;
         }
+
         a {
             color: rgb(0, 165, 206);
             text-decoration: none;
         }
+
         #in-nav {
             font-weight: bold;
             font-size: 14px;
         }
+
         .container {
             width: 100%;
+            margin: 20px 10px;
         }
+
         .calendar {
             float: left;
             width: 100px;
             height: 140px;
-            margin: 0 20px 0 10px;
-            text-align: center; 
-            }
-        .content {
-            width: 100%
+            margin: 0 10px 0 10px;
+            text-align: center;
         }
+
+        .content {
+            float: right;
+            width: 86%;
+            border-left: 2px solid gray;
+            padding-left: 15px;
+            /* margin-left: 10px; */
+        }
+
         .day {
             height: 80px;
             display: flex;
@@ -79,25 +99,27 @@
             color: red;
             font-size: 54px;
             font-weight: bold;
-              
+
         }
+
         .prop {
             height: 30px;
             display: flex;
             align-items: center;
-            justify-content: center; 
+            justify-content: center;
             background-color: red;
             color: white;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             font-weight: bold;
-            
+
         }
+
         .drop {
             height: 30px;
             display: flex;
             align-items: center;
-            justify-content: center;  
+            justify-content: center;
             background-color: grey;
             color: white;
             border-bottom-left-radius: 5px;
@@ -105,25 +127,53 @@
             font-weight: bold;
         }
 
+        .posted-by {
+            margin-right: 10px;
+        }
+        .link-more {
+            border-right: 2px solid rgb(122, 122, 122);
+            margin-right: 4px;
+        }
+        .link-full-story {
+            border-left: 2px solid rgb(122, 122, 122);
+            margin-left: 5px;
+            padding-left: 5px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+
     </style>
 </head>
+
 <body>
     <div class="navigation">
         <div><img src="images/rss-feed-icon.png"></img></div>
-        <div><h1>Most Popular Stories</h1></div>
+        <div>
+            <h1>Most Popular Stories</h1>
+        </div>
         <div class="question"><a href="www.google.com" id="in-nav">What's This?</a></div>
         <div class="button-first"><button>NOW</button></div>
         <div class="button"><button>TODAY</button></div>
         <div class="button"><button>THIS WEEK</button></div>
     </div>
-    
+
     <div class="container">
         <div class="calendar">
             <div class="prop">PROP IT</div>
             <div class="day">11</div>
             <div class="drop">DROP IT</div>
         </div>
-        <div class="content">C-SPAN ranks presidents: Abe still on top, new shocker at the bottom</div>
+        <div class="content">
+            <h2>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom</h2>
+            <span class="posted-by">Posted by: <a href="blablabla"> techrancik</a> </span> <span>6 hours, 32 minutes ago
+                in <a href="blabla">Politics</a> </span>
+            <p>Today is President's Day, that sacred holiday on the United States calendar devoted to honoring the
+                births of the two most important presidents in ...</p>
+            <p><a href="blablabla" class="link-more">More </a><a href="blablabla">Discuss </a><span>(0)</span><a href="blablabla" class="link-full-story">Read Full Story at latimesblogs.latimes.com</a></p>
+        </div>
     </div>
 </body>
+
 </html>
