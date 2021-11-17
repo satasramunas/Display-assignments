@@ -20,7 +20,7 @@
         .navigation {
             display: flex;
             align-items: baseline;
-            background-color: rgb(247, 245, 245);
+            background-color: rgba(216, 216, 216, 0.205);
             padding: 10px 20px 20px 10px;
         }
 
@@ -71,14 +71,18 @@
 
         .container {
             width: 100%;
+            height: 200px;
             margin: 20px 10px;
+        }
+        .container:nth-child(2n+1) {
+            background-color: rgba(216, 216, 216, 0.205);
         }
 
         .calendar {
             float: left;
             width: 100px;
             height: 140px;
-            margin: 0 10px 0 10px;
+            margin: 10px 10px 10px 10px;
             text-align: center;
         }
 
@@ -87,6 +91,7 @@
             width: 86%;
             border-left: 2px solid gray;
             padding-left: 15px;
+            border-bottom: 1px solid grey;
             /* margin-left: 10px; */
         }
 
@@ -186,7 +191,7 @@
     <div class="container">
         <div class="calendar">
             <div class="prop">PROP IT <i class="fas fa-angle-double-up"></i></div>
-            <div class="day">11</div>
+            <div class="day">8</div>
             <div class="drop">DROP IT <i class="fas fa-angle-double-down"></i></div>
         </div>
         <div class="content">
@@ -201,7 +206,7 @@
     <div class="container">
         <div class="calendar">
             <div class="prop">PROP IT <i class="fas fa-angle-double-up"></i></div>
-            <div class="day">11</div>
+            <div class="day">14</div>
             <div class="drop">DROP IT <i class="fas fa-angle-double-down"></i></div>
         </div>
         <div class="content">
@@ -216,7 +221,7 @@
     <div class="container">
         <div class="calendar">
             <div class="prop">PROP IT <i class="fas fa-angle-double-up"></i></div>
-            <div class="day">11</div>
+            <div class="day">17</div>
             <div class="drop">DROP IT <i class="fas fa-angle-double-down"></i></div>
         </div>
         <div class="content">
