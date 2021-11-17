@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document1_float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .container {
+            margin: 0 25px 0 10px;
+        }
+        .container::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+
+        .col-1 {
+            float: left;
+            width: 80%;
+            font-weight: bold;
+        }
+
+        .col-2 {
+            float: left;
+            width: 20%;
+            font-style: italic;
+            text-align: end;
+        }
+
+        .col-3 {
+            float: left;
+            border-top: 1px solid rgba(179, 179, 179, 0.397);
+            margin: 5px 35px 20px 0;
+            padding-top: 3px;
+            width: 100%;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+            margin-right: 20px;
+            border-bottom: 1px solid rgba(179, 179, 179, 0.397);
+        }
+        footer {
+            height: 20px;
+            font-size: 12px;
+            padding-top: 5px;
+            color: grey;
+            border-top: 1px solid rgba(179, 179, 179, 0.397);
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>Simple News Site</h1>
+    <h2>News</h2>
+    <div class="container">
+        <div class="col-1">About The Template</div>
+        <div class="col-2">February 15, 2003</div>
+        <div class="col-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>
+                Obcaecati dicta cumque deserunt
+                aliquid dignissimos corporis consequuntur fuga asperiores quaerat recusandae officia repellendus
+                possimus
+                ullam saepe hic corrupti laboriosam, rerum quo?
+            </p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Esse, laboriosam obcaecati repudiandae, nobis possimus provident dolore nihil eum delectus dolorum, in ea
+            ipsum dicta tempore! Modi iusto quisquam laudantium non.
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-1">Creating News On Your Site</div>
+        <div class="col-2">Date</div>
+        <div class="col-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta cumque deserunt
+                aliquid dignissimos corporis consequuntur fuga asperiores quaerat recusandae officia repellendus
+                possimus
+                ullam saepe hic corrupti laboriosam, rerum quo?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            Esse, laboriosam obcaecati repudiandae, nobis possimus provident dolore nihil eum delectus dolorum, in ea
+            ipsum dicta tempore! Modi iusto quisquam laudantium non.
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-1">Creating A News Archive</div>
+        <div class="col-2">Date</div>
+        <div class="col-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dicta cumque deserunt
+            aliquid dignissimos corporis consequuntur.<p> Fuga asperiores quaerat recusandae officia repellendus
+                possimus
+                ullam saepe hic corrupti laboriosam, rerum quo?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            Esse, laboriosam obcaecati repudiandae, nobis possimus provident dolore nihil eum delectus dolorum, in ea
+            ipsum dicta tempore! Modi iusto quisquam laudantium Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Architecto deserunt minus veniam corrupti consequatur autem aliquid blanditiis vero consectetur
+            placeat ipsam explicabo commodi temporibus, magni nihil atque aliquam dolore. Ipsam.</div>
+    </div>
+    <footer>
+        Copyright &copy; 1998 - 2003 Ian Jones.
+    </footer>
+
 </body>
+
 </html>
