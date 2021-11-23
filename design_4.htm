@@ -12,7 +12,7 @@
         }
         body {
             margin: 0;
-            background-image: url();
+            background-image: url(images/square_background.png);
             background-repeat: repeat;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
@@ -28,7 +28,7 @@
             width: 65%;
             font-size: 2.75rem;
             margin-right: 1em;
-            color: rgba(107,111,108);
+            color: rgb(107,111,108);
             line-height: 2.75rem;
         }
         .clearfix::after {
@@ -39,6 +39,7 @@
 
         .right {
             line-height: 1.65rem;
+            color: rgb(71, 71, 71);
         }
         .col-1 {
             width: 10%;
@@ -100,6 +101,9 @@
             font-size: 0.60em;
             color: rgb(158,158,158);
         }
+        span {
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -108,10 +112,10 @@
     <main>
         <div class="first-half">
             <div class="left clearfix">
-                We do everything with our core values of honesty, hard work, and trust.
+                We do everything with our core values of <span>honesty</span>, hard <span>work</span>, and <span>trust.</span>
             </div>
             <div class="right">
-                We believe these characteristics should influence everything we do in business and in
+                <span>We believe these characteristics</span> should influence everything we do in business and in
                 life. We sincerely enjoy the work we do, and our clients get to reap the benefits.
             </div>
         </div>
