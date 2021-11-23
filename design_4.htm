@@ -14,6 +14,7 @@
             margin: 0;
             background-image: url();
             background-repeat: repeat;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .first-half {
             margin: 2.5rem 0.75rem;
@@ -25,11 +26,19 @@
         .left {
             float: left;
             width: 65%;
-            font-size: 3rem;
+            font-size: 2.75rem;
             margin-right: 1em;
+            color: rgba(107,111,108);
+            line-height: 2.75rem;
         }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
         .right {
-            font-size: 1.5rem;
+            line-height: 1.65rem;
         }
         .col-1 {
             width: 10%;
@@ -79,11 +88,17 @@
             text-transform: uppercase;
             font-size: 0.8em;
             margin-bottom: 5px;
+            color: rgb(63, 63, 63);
         }
         .position {
             font-weight: bold;
             font-size: 0.75em;
+            color: rgb(59, 59, 59);
             margin-top: 0;
+        }
+        .email {
+            font-size: 0.60em;
+            color: rgb(158,158,158);
         }
 
     </style>
@@ -92,7 +107,7 @@
 <body>
     <main>
         <div class="first-half">
-            <div class="left">
+            <div class="left clearfix">
                 We do everything with our core values of honesty, hard work, and trust.
             </div>
             <div class="right">
