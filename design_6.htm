@@ -12,8 +12,16 @@
         }
 
         body {
-            margin: 0;
-            border: 1px solid gray;
+            margin: 5px;
+            border: 1px solid rgba(228, 228, 228, 0.801);
+        }
+        .all {
+            margin: 2px;
+         }
+        .gradient {
+            width: 100%;
+            height: 1.5rem;
+            background-image: linear-gradient(to bottom, rgba(228, 228, 228, 0.801), rgba(179, 179, 179, 0));
         }
 
         header {
@@ -28,15 +36,15 @@
 
         article {
             display: flex;
-            font-size: 0;
+            justify-content: center;
             margin-bottom: 1rem;
         }
 
         .photo {
-            padding: 4px;
             border: 2px solid rgba(189, 189, 189, 0.26);
-            width: 20rem;
-        }
+            font-size: 0;
+            padding: 0.25rem;
+         }
 
         .info {
             margin-left: 10px;
@@ -47,7 +55,7 @@
         }
 
         h1 {
-            margin-top: 1rem;
+            margin-top: 0;
             margin-bottom: 0;
             font-size: 1.75rem;
             color: rgb(19, 88, 102);
@@ -74,74 +82,76 @@
         a {
             color: rgb(31, 207, 255);
         }
+        
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Meet the HBCWeb Team</h1>
-        <p>HBCWeb is comprised of ultra-talented and experienced designers, developers and programmers. Learn more about
-            each person by reading their descriptions below: (yes it's currently all dudes...)</p>
-    </header>
-    <main>
-        <article>
-            <div class="photo"><img src="images/2-1.png"></div>
-            <div class="info">
-                <div class="name">
-                    <h2>Rob Carling - <span>Development Manager</span></h2>
+    <div class="all">
+        <div class="gradient"></div>
+        <header>
+            <h1>Meet the HBCWeb Team</h1>
+            <p>HBCWeb is comprised of ultra-talented and experienced designers, developers and programmers. Learn more about
+                each person by reading their descriptions below: (yes it's currently all dudes...)</p>
+        </header>
+        <main>
+            <article>
+                <div class="photo"><img src="images/2-1.png"></div><div class="info">
+                    <div class="name">
+                        <h2>Rob Carling - <span>Development Manager</span></h2>
+                    </div>
+                    <div class="about">
+                        <p>Rob oversees the day-to-day operations of HBCWeb. From the initial client interactions, to
+                            project planning, to the design phase and into development. Rob is also responsible for some
+                            design work seen in our <a href="#">Portfolio</a> including HBCWeb.com.
+                        </p>
+                    </div>
                 </div>
-                <div class="about">
-                    <p>Rob oversees the day-to-day operations of HBCWeb. From the initial client interactions, to
-                        project planning, to the design phase and into development. Rob is also responsible for some
-                        design work seen in our <a href="#">Portfolio</a> including HBCWeb.com.
-                    </p>
+            </article>
+            <article>
+                <div class="photo"><img src="images/2-2.png"></div>
+                <div class="info">
+                    <div class="name">
+                        <h2>Dustin Green - <span>Lead Developer</span></h2>
+                    </div>
+                    <div class="about">
+                        <p>Dustin is our longest-running developer, having been with the company for over 4 years. Dustin is
+                            responsible for the development of the initial Priceline Partner Network White-Label platform,
+                            and continues to maintain and improve it on a day-to-day basis.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article>
-            <div class="photo"><img src="images/2-2.png"></div>
-            <div class="info">
-                <div class="name">
-                    <h2>Dustin Green - <span>Lead Developer</span></h2>
+            </article>
+            <article>
+                <div class="photo"><img src="images/2-3.png"></div>
+                <div class="info">
+                    <div class="name">
+                        <h2>Glenn Generao - <span>Graphic Designer</span></h2>
+                    </div>
+                    <div class="about">
+                        <p>Glenn is our longest-running employee, having been hired in December of 2004. Glenn is
+                            responsible for all thing graphical, his unique and creative approach to design has been a key
+                            to establishing HBCWeb as a web design powerhouse.
+                        </p>
+                    </div>
                 </div>
-                <div class="about">
-                    <p>Dustin is our longest-running developer, having been with the company for over 4 years. Dustin is
-                        responsible for the development of the initial Priceline Partner Network White-Label platform,
-                        and continues to maintain and improve it on a day-to-day basis.
-                    </p>
+            </article>
+            <article>
+                <div class="photo"><img src="images/2-4.png"></div>
+                <div class="info">
+                    <div class="name">
+                        <h2>Wes Sayas - <span>Lead Programmer</span></h2>
+                    </div>
+                    <div class="about">
+                        <p>As lead programmer, Wes is responsible for the programming on many of our highest traffic
+                            websites. Wes is also heavily involved in the project planning and is often involved in the
+                            initial client communications.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </article>
-        <article>
-            <div class="photo"><img src="images/2-3.png"></div>
-            <div class="info">
-                <div class="name">
-                    <h2>Glenn Generao - <span>Graphic Designer</span></h2>
-                </div>
-                <div class="about">
-                    <p>Glenn is our longest-running employee, having been hired in December of 2004. Glenn is
-                        responsible for all thing graphical, his unique and creative approach to design has been a key
-                        to establishing HBCWeb as a web design powerhouse.
-                    </p>
-                </div>
-            </div>
-        </article>
-        <article>
-            <div class="photo"><img src="images/2-4.png"></div>
-            <div class="info">
-                <div class="name">
-                    <h2>Wes Sayas - <span>Lead Programmer</span></h2>
-                </div>
-                <div class="about">
-                    <p>As lead programmer, Wes is responsible for the programming on many of our highest traffic
-                        websites. Wes is also heavily involved in the project planning and is often involved in the
-                        initial client communications.
-                    </p>
-                </div>
-            </div>
-        </article>
-    </main>
-
+            </article>
+        </main>
+    </div>
 </body>
 
 </html>
